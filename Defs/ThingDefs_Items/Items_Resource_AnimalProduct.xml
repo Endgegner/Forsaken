@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+  <!--=============== Eggs ====================-->
+
+
+  <ThingDef ParentName="EggFertBase">
+    <defName>EggNightlingFertilized</defName>
+    <label>nightling egg (fert.)</label>
+    <description>Fertilized nightling egg. If all goes well, it should hatch into a baby nightling. It can be eaten raw, but it's much better cooked.</description>
+    <graphicData>
+      <texPath>Eggs</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>100.0</MarketValue>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Hatcher">
+        <hatcherDaystoHatch>15</hatcherDaystoHatch>
+        <hatcherPawn>NightlingF</hatcherPawn>
+      </li>
+    </comps>
+  </ThingDef>
+
+
+
+  
+</Defs>

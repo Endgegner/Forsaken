@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ResearchProjectDef>
+    <defName>ForsakenWeapons</defName>
+    <label>Lost Recipes</label>
+    <tab>Main</tab>
+    <techLevel>Spacer</techLevel>
+    <description>Allows you to learn the way of the Forsaken and produce weapons</description>
+    <baseCost>2600</baseCost>
+    <prerequisites>
+      <li>ChargedShot</li>
+    </prerequisites>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+		<researchViewX>10</researchViewX>
+		<researchViewY>5</researchViewY>
+  </ResearchProjectDef>
+
+  
+ </Defs>

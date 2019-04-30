@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <ThingDef ParentName="BaseFilth">
+        <defName>ForsakenBlood</defName>
+        <label>Blood of the Forsakens</label>
+        <statBases>
+            <Beauty>666</Beauty>
+            <Cleanliness>0</Cleanliness>
+        </statBases>
+        <graphicData>
+            <texPath>Things/Filth/Spatter</texPath>
+            <color>(241, 230, 47)</color>
+        </graphicData>
+        <filth>
+            <rainWashes>true</rainWashes>
+            <cleaningWorkToReduceThickness>70</cleaningWorkToReduceThickness>
+            <canFilthAttach>true</canFilthAttach>
+        </filth>
+    </ThingDef>
+</Defs>

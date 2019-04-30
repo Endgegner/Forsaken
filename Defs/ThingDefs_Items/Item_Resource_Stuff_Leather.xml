@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+<!--========== Nightling leather ============-->
+
+  <ThingDef ParentName="LeatherBase">
+    <defName>Leather_Nightling</defName>
+    <label>nightling fur</label>
+    <graphicData>
+      <color>(24,24,31)</color>
+    </graphicData>
+    <stuffProps>
+      <color>(24,24,31)</color>
+      <commonality>0.2</commonality>
+    </stuffProps>
+    <statBases>
+        <StuffPower_Insulation_Cold>24</StuffPower_Insulation_Cold>
+        <StuffPower_Insulation_Heat>24</StuffPower_Insulation_Heat>
+    </statBases>
+  </ThingDef>
+  
+<!--========== Forsaken leather ============-->
+
+  <ThingDef ParentName="LeatherBase">
+    <defName>Leather_Forsaken</defName>
+    <label>Forsaken Skin</label>
+    <graphicData>
+      <color>(30, 30, 30)</color>
+    </graphicData>
+    <stuffProps>
+      <color>(30, 30, 30)</color>
+      <commonality>0.0</commonality>
+    </stuffProps>
+    <statBases>
+      <MarketValue>2.9</MarketValue>
+      <StuffPower_Insulation_Cold>10</StuffPower_Insulation_Cold>
+      <StuffPower_Insulation_Heat>10</StuffPower_Insulation_Heat>
+    </statBases>
+  </ThingDef>
+
+</Defs>

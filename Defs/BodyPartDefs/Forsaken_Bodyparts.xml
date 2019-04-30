@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>  
+
+  <BodyPartGroupDef>
+    <defName>RightHandClawsGroup</defName>
+    <label>Right hand claws</label>
+    <listOrder>80</listOrder>
+  </BodyPartGroupDef>
+
+
+  <BodyPartGroupDef>
+    <defName>LeftHandClawsGroup</defName>
+    <label>Left hand claws</label>
+    <listOrder>80</listOrder>
+  </BodyPartGroupDef>
+
+  
+  <BodyPartDef>
+    <defName>RightHandClaws</defName>
+    <label>Right claws</label>
+    <hitPoints>10</hitPoints>
+    <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+    <skinCovered>false</skinCovered>
+    <solid>true</solid>
+    <bleedRate>0.0</bleedRate>
+  </BodyPartDef>
+  
+    
+  <BodyPartDef>
+    <defName>LeftHandClaws</defName>
+    <label>Left claws</label>
+    <hitPoints>10</hitPoints>
+    <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+    <skinCovered>false</skinCovered>
+    <solid>true</solid>
+    <bleedRate>0.0</bleedRate>
+  </BodyPartDef>
+
+</Defs>

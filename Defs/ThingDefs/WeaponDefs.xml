@@ -1,0 +1,552 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+  <thingDef Name="BaseForsaken" Abstract="True" ParentName="BaseWeapon">
+		<techLevel>Spacer</techLevel>
+		<smeltable>true</smeltable>
+    <thingCategories>
+      <li>Weapons</li>
+    </thingCategories>
+    <weaponTags>
+       <li>Forsaken</li>
+    </weaponTags>
+    <inspectorTabs>
+      <li>ITab_Art</li>
+    </inspectorTabs>
+    <comps>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+      <li Class="CompProperties_Art">
+        <nameMaker>NamerArtWeaponGun</nameMaker>
+        <descriptionMaker>ArtDescription_WeaponGun</descriptionMaker>
+        <minQualityForArtistic>Excellent</minQualityForArtistic>
+	   </li>
+		<li>
+			<compClass>CompOversizedWeapon.CompOversizedWeapon</compClass>
+		</li>
+    </comps>
+    <recipeMaker>
+      <workSpeedStat>SmithingSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Smith</soundWorking>
+      <recipeUsers>
+        <li>TableMachining</li>
+      </recipeUsers>
+      <unfinishedThingDef>UnfinishedGun</unfinishedThingDef>
+      <researchPrerequisite>ForsakenWeapons</researchPrerequisite>
+    </recipeMaker>
+  </thingDef>
+
+
+
+  <!-- ===================[[[Sniper]]]=========================== -->
+
+  <thingDef ParentName="BaseBullet">
+    <defName>SniperPulse</defName>
+    <label>Sniper Pulse</label>
+    <graphicData>
+      <texPath>Weapons/SnipPulse</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>35</damageAmountBase>
+      <speed>666</speed>
+    </projectile>
+  </thingDef>
+
+  <thingDef ParentName="BaseForsaken">
+    <defName>ForsakenSniper</defName>
+    <label>Forsaken Sniping Rifle</label>
+    <description>They Dead</description>
+    <graphicData>
+      <texPath>Weapons/Sniper</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<weaponTags>
+      <li>ForsakenSniper</li>
+    </weaponTags>
+    <soundInteract>Interact_AssaultRifle</soundInteract>
+    <recipeMaker>
+      <researchPrerequisite>ForsakenWeapons</researchPrerequisite>
+    </recipeMaker>
+    <statBases>
+      <Mass>5.81</Mass>
+      <WorkToMake>50500</WorkToMake>
+      <AccuracyTouch>1</AccuracyTouch>
+      <AccuracyShort>1</AccuracyShort>
+      <AccuracyMedium>0.90</AccuracyMedium>
+      <AccuracyLong>0.90</AccuracyLong>
+      <RangedWeapon_Cooldown>2.1</RangedWeapon_Cooldown>
+    </statBases>
+    <equippedStatOffsets>
+      <MoveSpeed>1</MoveSpeed>
+    </equippedStatOffsets>
+    <costList>
+      <Steel>300</Steel>
+      <Plasteel>75</Plasteel>
+      <ComponentIndustrial>12</ComponentIndustrial>
+	  <AIPersonaCore>1</AIPersonaCore>
+    </costList>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>SniperPulse</defaultProjectile>
+        <warmupTime>1</warmupTime>
+        <range>120</range>
+        <soundCast>Shot_SniperRifle</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>12</muzzleFlashScale>
+      </li>
+    </verbs>
+  </thingDef>
+
+  <!-- ===================[[[Shotgun]]]=========================== -->
+
+  <thingDef ParentName="BaseBullet">
+    <defName>PulseSlug</defName>
+    <label>Shotgun Pulse</label>
+    <graphicData>
+      <texPath>Weapons/ShotPulse</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>20</damageAmountBase>
+      <speed>78</speed>
+    </projectile>
+  </thingDef>
+
+  <thingDef ParentName="BaseForsaken">
+    <defName>ForsakenShotGun</defName>
+    <label>Forsaken ShotGun</label>
+    <description>Many Pews</description>
+	<weaponTags>
+      <li>ForsakenGun</li>
+    </weaponTags>
+    <graphicData>
+      <texPath>Weapons/PewPews</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Interact_Shotgun</soundInteract>
+    <recipeMaker>
+      <researchPrerequisite>ForsakenWeapons</researchPrerequisite>
+    </recipeMaker>
+    <statBases>
+      <Mass>2.03</Mass>
+      <WorkToMake>54500</WorkToMake>
+      <AccuracyTouch>0.9</AccuracyTouch>
+      <AccuracyShort>0.75</AccuracyShort>
+      <AccuracyMedium>0.55</AccuracyMedium>
+      <AccuracyLong>0.1</AccuracyLong>
+      <RangedWeapon_Cooldown>1.3</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Steel>350</Steel>
+      <Plasteel>120</Plasteel>
+      <ComponentIndustrial>20</ComponentIndustrial>
+	  <AIPersonaCore>1</AIPersonaCore>
+    </costList>
+    <equippedStatOffsets>
+      <MoveSpeed>-0.25</MoveSpeed>
+    </equippedStatOffsets>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>PulseSlug</defaultProjectile>
+        <warmupTime>0.95</warmupTime>
+        <range>15</range>
+        <burstShotCount>5</burstShotCount>
+        <ticksBetweenBurstShots>0</ticksBetweenBurstShots>
+        <soundCast>Shot_Shotgun</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>14</muzzleFlashScale>
+      </li>
+    </verbs>
+  </thingDef>
+
+  <!-- ====================[[[Assault Rifle]]]========================== -->
+
+  <thingDef ParentName="BaseBullet">
+    <defName>PulseMachine</defName>
+    <label>Assault Rifle Pulse</label>
+    <graphicData>
+      <texPath>Weapons/SmolPulse</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>8</damageAmountBase>
+      <speed>66</speed>
+    </projectile>
+  </thingDef>
+
+  <thingDef ParentName="BaseForsaken">
+    <defName>ForsakenAR</defName>
+    <label>Forsaken Assault Rifle</label>
+    <description>Super Pews Pews</description>
+	<weaponTags>
+      <li>ForsakenGun</li>
+    </weaponTags>
+    <graphicData>
+      <texPath>Weapons/PewPew</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Interact_ChargeRifle</soundInteract>
+    <recipeMaker>
+      <researchPrerequisite>ForsakenWeapons</researchPrerequisite>
+    </recipeMaker>
+    <statBases>
+      <Mass>1</Mass>
+      <WorkToMake>60500</WorkToMake>
+      <AccuracyTouch>0.90</AccuracyTouch>
+      <AccuracyShort>0.85</AccuracyShort>
+      <AccuracyMedium>0.75</AccuracyMedium>
+      <AccuracyLong>0.70</AccuracyLong>
+      <RangedWeapon_Cooldown>0.2</RangedWeapon_Cooldown>
+    </statBases>
+    <equippedStatOffsets>
+      <MoveSpeed>1</MoveSpeed>
+    </equippedStatOffsets>
+    <costList>
+      <Steel>500</Steel>
+      <Plasteel>100</Plasteel>
+      <ComponentIndustrial>10</ComponentIndustrial>
+	  <AIPersonaCore>1</AIPersonaCore>
+    </costList>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>PulseMachine</defaultProjectile>
+        <warmupTime>0</warmupTime>
+        <range>30</range>
+        <soundCast>Shot_ChargeRifle</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>1</muzzleFlashScale>
+      </li>
+    </verbs>
+  </thingDef>
+  
+   <!-- ====================[[Sword Boye]]========================== --> 
+  
+  	<ThingDef ParentName="BaseForsaken">
+    <defName>ForsakenLongBlade</defName>
+    <label>Forsaken Long Blade</label>
+    <description>Slash Slashy</description>
+    <graphicData>
+      <texPath>Weapons/Swordie</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <techLevel>Spacer</techLevel>
+    <weaponTags>
+      <li>ForsakenMelee</li>
+    </weaponTags>
+    <costStuffCount>120</costStuffCount>
+    <statBases>
+      <WorkToMake>22000</WorkToMake>
+      <Mass>1.6</Mass>
+    </statBases>
+    <equippedAngleOffset>-65</equippedAngleOffset>
+    <costList>
+      <Steel>400</Steel>
+      <Plasteel>100</Plasteel>
+      <ComponentIndustrial>10</ComponentIndustrial>
+	  <Gold>25</Gold>
+    </costList>
+    <tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>4</power>
+        <cooldownTime>.2</cooldownTime>
+      </li>
+      <li>
+        <label>point</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>5</power>
+        <cooldownTime>.2</cooldownTime>
+      </li>
+      <li>
+        <label>edge</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>4</power>
+        <cooldownTime>.2</cooldownTime>
+      </li>
+    </tools>
+    <recipeMaker>
+      <researchPrerequisite>ForsakenWeapons</researchPrerequisite>
+    </recipeMaker>
+  </ThingDef>
+  
+    <!-- ====================[[Axe Boye]]========================== --> 
+  
+  	<ThingDef ParentName="BaseForsaken">
+    <defName>ForsakenBattle</defName>
+    <label>Forsaken Battle Axe</label>
+    <description>Slash Slashy</description>
+    <graphicData>
+      <texPath>Weapons/BattleAxe</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <drawSize>1.420</drawSize>
+    </graphicData>
+    <techLevel>Spacer</techLevel>
+    <weaponTags>
+      <li>ForsakenMelee</li>
+    </weaponTags>
+    <costStuffCount>120</costStuffCount>
+    <statBases>
+      <WorkToMake>22000</WorkToMake>
+      <Mass>1.6</Mass>
+    </statBases>
+    <equippedAngleOffset>10</equippedAngleOffset>
+    <costList>
+      <Steel>600</Steel>
+      <Plasteel>100</Plasteel>
+      <ComponentIndustrial>10</ComponentIndustrial>
+	  <Gold>60</Gold>
+    </costList>
+    <tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>15</power>
+        <cooldownTime>1</cooldownTime>
+      </li>
+      <li>
+        <label>Axe</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>35</power>
+        <cooldownTime>1</cooldownTime>
+      </li>
+      <li>
+        <label>edge</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>35</power>
+        <cooldownTime>1</cooldownTime>
+      </li>
+    </tools>
+    <recipeMaker>
+      <researchPrerequisite>ForsakenWeapons</researchPrerequisite>
+    </recipeMaker>
+		<comps>
+			<li>
+				<compClass>CompOversizedWeapon.CompOversizedWeapon</compClass>
+			</li>
+		</comps>
+  </ThingDef>
+  
+     <!-- ====================[[Bulk Sword Boye]]========================== --> 
+  
+  	<ThingDef ParentName="BaseForsaken">
+    <defName>ForsakenBulksword</defName>
+    <label>Forsaken Bulk Sword</label>
+    <description>Swing</description>
+    <graphicData>
+      <texPath>Weapons/Swingie</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+ 	  <drawSize>1.3</drawSize>
+    </graphicData>
+		<comps>
+			<li>
+				<compClass>CompOversizedWeapon.CompOversizedWeapon</compClass>
+			</li>
+		</comps>
+    <techLevel>Spacer</techLevel>
+    <weaponTags>
+      <li>ForsakenMelee</li>
+    </weaponTags>
+    <costStuffCount>120</costStuffCount>
+    <statBases>
+      <WorkToMake>22000</WorkToMake>
+      <Mass>1.6</Mass>
+    </statBases>
+    <equippedAngleOffset>-50</equippedAngleOffset>
+    <costList>
+      <Steel>450</Steel>
+      <Plasteel>100</Plasteel>
+      <ComponentIndustrial>10</ComponentIndustrial>
+	  <Gold>30</Gold>
+    </costList>
+    <tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>2</power>
+        <cooldownTime>.5</cooldownTime>
+      </li>
+      <li>
+        <label>Axe</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>10</power>
+        <cooldownTime>.5</cooldownTime>
+      </li>
+      <li>
+        <label>edge</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>15</power>
+        <cooldownTime>.5</cooldownTime>
+      </li>
+    </tools>
+    <recipeMaker>
+      <researchPrerequisite>ForsakenWeapons</researchPrerequisite>
+    </recipeMaker>
+  </ThingDef>
+  
+     <!-- ====================[[Forsaken Spear]]========================== --> 
+  
+  	<ThingDef ParentName="BaseForsaken">
+		<defName>FSpear</defName>
+		<label>Forsaken Spear</label>
+		<description>Pointy...</description>
+		<graphicData>
+			<texPath>Weapons/FSpear</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+		<comps>
+			<li>
+				<compClass>CompOversizedWeapon.CompOversizedWeapon</compClass>
+			</li>
+		</comps>
+		<techLevel>Neolithic</techLevel>
+		<costStuffCount>180</costStuffCount>
+		<statBases>
+			<WorkToMake>17000</WorkToMake>
+			<Mass>2</Mass>
+		</statBases>
+		<equippedAngleOffset>-25</equippedAngleOffset>
+		<costList>
+			<Steel>180</Steel>
+		</costList>
+
+    <tools>
+      <li>
+        <label>shaft</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>15</power>
+        <cooldownTime>1.5</cooldownTime>
+      </li>
+      <li>
+        <label>point</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>22</power>
+        <cooldownTime>1.5</cooldownTime>
+      </li>
+    </tools>
+		<recipeMaker>
+			<researchPrerequisite>LongBlades</researchPrerequisite>
+      <recipeUsers>
+        <li>ElectricSmithy</li>
+        <li>FueledSmithy</li>
+      </recipeUsers>		
+	  </recipeMaker>
+	<!--<modExtensions>
+    <li Class="PawnGlow.EquipmentGlowProperties">
+        <graphicPath>Effects/WepGlow/FSpear</graphicPath>
+        <graphicOffset>0.002</graphicOffset>
+    </li>
+	</modExtensions>-->
+	</ThingDef>
+	
+     <!-- ====================[[Forsaken Bow]]========================== --> 
+	 
+	   <thingDef ParentName="BaseBullet">
+    <defName>FArrow</defName>
+    <label>Forsaken Arrow</label>
+    <graphicData>
+      <texPath>Weapons/FArrow</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Cut</damageDef>
+      <damageAmountBase>8</damageAmountBase>
+      <speed>66</speed>
+    </projectile>
+  </thingDef>
+  
+  <thingDef ParentName="BaseForsaken">
+    <defName>FBow</defName>
+    <label>Forsaken Bow</label>
+    <description>...</description>
+    <graphicData>
+      <texPath>Weapons/FBow</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	   	  <drawSize>1.5</drawSize>
+    </graphicData>
+	<equippedAngleOffset>10</equippedAngleOffset>
+    <soundInteract>Bow_Recurve</soundInteract>
+    <recipeMaker>
+      <researchPrerequisite>ForsakenWeapons</researchPrerequisite>
+      <recipeUsers>
+        <li>ElectricSmithy</li>
+        <li>FueledSmithy</li>
+      </recipeUsers>    
+	  </recipeMaker>
+    <statBases>
+      <WorkToMake>12000</WorkToMake>
+      <Mass>0.85</Mass>
+      <AccuracyTouch>0.90</AccuracyTouch>
+      <AccuracyShort>0.78</AccuracyShort>
+      <AccuracyMedium>0.65</AccuracyMedium>
+      <AccuracyLong>0.35</AccuracyLong>
+      <RangedWeapon_Cooldown>1.66</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Steel>180</Steel>
+    </costList>
+    <equippedStatOffsets>
+    </equippedStatOffsets>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>FArrow</defaultProjectile>
+        <warmupTime>1</warmupTime>
+        <range>32</range>
+        <burstShotCount>2</burstShotCount>
+        <ticksBetweenBurstShots>0</ticksBetweenBurstShots>
+        <soundCast>Bow_Large</soundCast>
+		    <muzzleFlashScale>.04</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>limb</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+  </thingDef>
+</Defs>

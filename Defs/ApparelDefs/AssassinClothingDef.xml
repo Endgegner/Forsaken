@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs> 
+
+  <ThingDef Name="HatBase" ParentName="ApparelBase" Abstract="True">
+    <thingCategories>
+      <li>Headgear</li>
+    </thingCategories>
+  </ThingDef>
+
+  <ThingDef Name="HatMakeableBase" ParentName="ApparelMakeableBase" Abstract="True">
+    <thingCategories>
+      <li>Headgear</li>
+    </thingCategories>
+  </ThingDef>
+
+  <ThingDef Name="ArmorHelmetMakeableBase" ParentName="ArmorMakeableBase" Abstract="True">
+    <thingCategories>
+      <li>Headgear</li>
+    </thingCategories>
+  </ThingDef>
+  
+
+
+ <ThingDef ParentName="HatMakeableBase">
+    <defName>Forsaken_Hood</defName>
+    <label>Forsaken Hood</label>
+    <description>Work of centuries of armor innovation,the Forsakens have perfected it.</description>
+    <techLevel>Ultra</techLevel>
+    <useHitPoints>True</useHitPoints>
+    <recipeMaker>
+      <researchPrerequisite>ComplexClothing</researchPrerequisite>
+    </recipeMaker>
+    <graphicData>
+      <texPath>Apparel/Display/FHood1</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <DeteriorationRate>0</DeteriorationRate>
+      <WorkToMake>40000</WorkToMake>
+      <MaxHitPoints>66600</MaxHitPoints>
+      <Mass>2.7</Mass>
+      <ArmorRating_Blunt>.2</ArmorRating_Blunt>
+      <ArmorRating_Sharp>.1</ArmorRating_Sharp>
+      <ArmorRating_Heat>-.4</ArmorRating_Heat>
+      <Insulation_Cold>45</Insulation_Cold>
+      <Insulation_Heat>-3</Insulation_Heat>
+    </statBases>
+    <equippedStatOffsets>
+      <MoveSpeed>6.66</MoveSpeed>
+    </equippedStatOffsets>
+    <costList>
+		<Steel>100</Steel>
+    </costList>
+		<generateCommonality>1</generateCommonality>
+		<apparel>
+			<bodyPartGroups>
+				<li>FullHead</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Apparel/FHoodie/FHood1</wornGraphicPath>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+	 <tags>
+        <li>Forsaken</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Forsaken</li>
+      </defaultOutfitTags>
+    </apparel>
+	<!--<modExtensions>
+    <li Class="PawnGlow.EquipmentGlowProperties">
+        <graphicPath>Effects/ApparelGlow/Hood/FHood1</graphicPath>
+        <graphicOffset>0.002</graphicOffset>
+    </li>
+	</modExtensions>-->
+  </ThingDef>
+  
+    <ThingDef ParentName="ApparelMakeableBase">
+    <defName>Forsaken_Cloak</defName>
+    <description>Gotta be fast</description>
+    <label>Forsaken Cloak</label>
+    <recipeMaker>
+      <researchPrerequisite>ComplexClothing</researchPrerequisite>
+    </recipeMaker>
+    <graphicData>
+      <texPath>Apparel/Display/Cloak</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <thingCategories>
+      <li>Apparel</li>
+    </thingCategories>
+    <statBases>
+      <MaxHitPoints>66600</MaxHitPoints>
+      <WorkToMake>60000</WorkToMake>
+      <Mass>2.2</Mass>
+      <ArmorRating_Blunt>0.3</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.2</ArmorRating_Sharp>
+      <ArmorRating_Heat>0.37</ArmorRating_Heat>
+      <Insulation_Cold>65</Insulation_Cold>
+      <Insulation_Heat>-7</Insulation_Heat>
+    </statBases>
+    <equippedStatOffsets>
+      <MoveSpeed>6.66</MoveSpeed>
+    </equippedStatOffsets>
+	<costList>
+		<Steel>250</Steel>
+    </costList>
+    <apparel>
+      <bodyPartGroups>
+        <li>Torso</li>
+        <li>Shoulders</li>
+        <li>Arms</li>
+        <li>Legs</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Apparel/FCloak/Cloak</wornGraphicPath>
+      <layers>
+        <li>Shell</li>
+      </layers>
+      <tags>
+        <li>Foraken</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Forsaken</li>
+      </defaultOutfitTags>
+    </apparel>
+  </ThingDef>
+  
+  </Defs>

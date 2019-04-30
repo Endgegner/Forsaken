@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<HairDef>
+		<label>Alpha Horns</label>
+		<texPath>Horns/Alpha</texPath>
+		<defName>AlphaH</defName>
+		<hairTags>
+		<li>Forsaken</li>
+		</hairTags>
+	</HairDef>
+  
+    <HairDef>
+    <label>Big Goat Horns</label>
+    <texPath>Horns/BGoat</texPath>
+    <defName>BGoatH</defName>
+    <hairTags>
+      <li>Forsaken</li>
+    </hairTags>
+  </HairDef>
+  
+  
+    <HairDef>
+    <label>Four Horns</label>
+    <texPath>Horns/Forns</texPath>
+    <defName>Forns</defName>
+    <hairTags>
+      <li>Forsaken</li>
+    </hairTags>
+  </HairDef>
+  
+  
+    <HairDef>
+    <label>Oni Horns</label>
+    <texPath>Horns/OniHorns</texPath>
+    <defName>OniH</defName>
+    <hairTags>
+      <li>Forsaken</li>
+    </hairTags>
+  </HairDef>
+  
+ 	<HairDef>
+		<label>Bald</label>
+		<texPath>Horns/bald</texPath>
+		<defName>BaldH</defName>
+		<hairTags>
+		<li>Forsaken</li>
+		</hairTags>
+	</HairDef>
+	
+	<HairDef>
+		<label>No Horns</label>
+		<texPath>Horns/nohorn</texPath>
+		<defName>NoH</defName>
+		<hairTags>
+		<li>Forsaken</li>
+		</hairTags>
+	</HairDef>
+
+		<HairDef>
+		<label>None</label>
+		<texPath>Horns/no</texPath>
+		<defName>NoneH</defName>
+		<hairTags>
+		<li>Forsaken</li>
+		</hairTags>
+	</HairDef>
+
+  
+ </Defs>
+  
