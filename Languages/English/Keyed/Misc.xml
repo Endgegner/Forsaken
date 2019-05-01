@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+    <Forsaken>Forsaken</Forsaken>
+
+    <ForsakenPawnCategory>&lt;b&gt;Forsaken Stats :&lt;/b&gt;</ForsakenPawnCategory>
+    
+    <F_MoveSpeedText>Move speed : </F_MoveSpeedText>
+    <F_ResearchSpeedText>Research speed : </F_ResearchSpeedText>
+    <F_MiningSpeedText>Mining speed : </F_MiningSpeedText>
+
+    <NightlingCategory>&lt;b&gt;Nightling Stats :&lt;/b&gt;</NightlingCategory>
+    <N_MoveSpeedText>Nightling move speed : </N_MoveSpeedText>
+
+    <WeaponsCategory>&lt;b&gt;Weapons Stats :&lt;/b&gt;</WeaponsCategory>
+    <SniperDamage>Sniper damage : </SniperDamage>
+
+</LanguageData>

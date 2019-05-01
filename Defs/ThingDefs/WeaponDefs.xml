@@ -97,7 +97,7 @@
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>SniperPulse</defaultProjectile>
         <warmupTime>1</warmupTime>
-        <range>120</range>
+        <range>60</range>
         <soundCast>Shot_SniperRifle</soundCast>
         <soundCastTail>GunTail_Heavy</soundCastTail>
         <muzzleFlashScale>12</muzzleFlashScale>
@@ -149,7 +149,7 @@
       <Steel>350</Steel>
       <Plasteel>120</Plasteel>
       <ComponentIndustrial>20</ComponentIndustrial>
-	  <AIPersonaCore>1</AIPersonaCore>
+	    <AIPersonaCore>1</AIPersonaCore>
     </costList>
     <equippedStatOffsets>
       <MoveSpeed>-0.25</MoveSpeed>
@@ -217,7 +217,7 @@
       <Steel>500</Steel>
       <Plasteel>100</Plasteel>
       <ComponentIndustrial>10</ComponentIndustrial>
-	  <AIPersonaCore>1</AIPersonaCore>
+	    <AIPersonaCore>1</AIPersonaCore>
     </costList>
     <verbs>
       <li>

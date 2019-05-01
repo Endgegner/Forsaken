@@ -10,61 +10,6 @@
   		<ComfyTemperatureMin>-65</ComfyTemperatureMin>
   		<MarketValue>750</MarketValue>
     </statBases>
-    <!--<verbs>
-      <li>
-        <verbClass>Verb_MeleeAttack</verbClass>
-        <defaultCooldownTime>1</defaultCooldownTime>
-        <meleeDamageBaseAmount>30</meleeDamageBaseAmount>
-        <meleeDamageDef>Scratch</meleeDamageDef>
-        <linkedBodyPartsGroup>FrontLeftPaw</linkedBodyPartsGroup>
-        <surpriseAttack>
-          <extraMeleeDamages>
-            <li>
-              <def>Stun</def>
-              <amount>20</amount>
-            </li>
-          </extraMeleeDamages>
-        </surpriseAttack>
-      </li>
-      <li>
-        <verbClass>Verb_MeleeAttack</verbClass>
-        <defaultCooldownTime>1</defaultCooldownTime>
-        <meleeDamageBaseAmount>30</meleeDamageBaseAmount>
-        <meleeDamageDef>Scratch</meleeDamageDef>
-        <linkedBodyPartsGroup>FrontRightPaw</linkedBodyPartsGroup>
-        <surpriseAttack>
-          <extraMeleeDamages>
-            <li>
-              <def>Stun</def>
-              <amount>20</amount>
-            </li>
-          </extraMeleeDamages>
-        </surpriseAttack>
-      </li>
-      <li>
-        <verbClass>Verb_MeleeAttack</verbClass>
-        <defaultCooldownTime>1</defaultCooldownTime>
-        <meleeDamageBaseAmount>30</meleeDamageBaseAmount>
-        <meleeDamageDef>ToxicBite</meleeDamageDef>
-        <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
-        <surpriseAttack>
-          <extraMeleeDamages>
-            <li>
-              <def>Stun</def>
-              <amount>20</amount>
-            </li>
-          </extraMeleeDamages>
-        </surpriseAttack>
-      </li>
-      <li>
-        <verbClass>Verb_MeleeAttack</verbClass>
-        <defaultCooldownTime>1</defaultCooldownTime>
-        <meleeDamageBaseAmount>30</meleeDamageBaseAmount>
-        <meleeDamageDef>Blunt</meleeDamageDef>
-        <commonality>0.01</commonality>
-        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
-      </li>
-    </verbs>-->
     <tools>
       <li>
         <label>left claw</label>
